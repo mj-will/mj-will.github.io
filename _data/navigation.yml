@@ -1,0 +1,22 @@
+
+# main links
+main:
+  - title: "Exploring Python Plotting"
+    url: /guides/plotting/getting-started/
+
+
+# documentation links
+guides:
+  - title: Overview
+    children:
+      - title: "Getting Started"
+        url: /guides/plotting/getting-started
+      - title: "Matplotlib"
+        url: /guides/plotting/intro-to-matplotlib
+  - title: Corner Plots
+    children:
+      - title: "Introduction to Corner"
+        url: /guides/plotting/intro-to-corner
+      - title: "Customising Corner Plots"
+        url: /guides/plotting/customising-corner
+    
