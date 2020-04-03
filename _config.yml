@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "Michael J. Williams"
   avatar           : "assets/images/bio-photo.jpg"
-  bio              : "I am a PhD student at the University of Glasgow"
+  bio              : "I am a PhD student at the University of Glasgow working on applications of machine learning to graivational-wave data analysis"
   location         : "Glasgow, UK"
   email            :
   links:
