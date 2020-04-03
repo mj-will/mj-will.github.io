@@ -29,7 +29,7 @@ $ tensorboard --logdir ./logdir --port 6008
 
 ## Managing ssh connections
 
-Skip ahead to [this section](the-script) if you just want to see the final script.
+Skip ahead to [this section](#the-script) if you just want to see the final script.
 
 ### A simple approach
 
