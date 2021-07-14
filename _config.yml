@@ -123,13 +123,13 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url:
+      url: "https://twitter.com/michael_j_will"
     #- label: "Facebook"
       # icon: "fab fa-fw fa-facebook-square"
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/mj-will"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -268,8 +268,11 @@ compress_html:
 
 # Collections
 collections:
-  guides:
-    output: true
+  #guides:
+  #  output: true
+  #  permalink: /:collection/:path/
+  general:
+    output : true
     permalink: /:collection/:path/
 
 

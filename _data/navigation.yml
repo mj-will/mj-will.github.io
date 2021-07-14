@@ -1,8 +1,10 @@
 
 # main links
 main:
-  - title: "Exploring Python Plotting"
-    url: /guides/plotting/getting-started/
+  - title: "Talks"
+    url: /talks/
+  - title: "Publications"
+    url: /publications/
 
 
 # documentation links
