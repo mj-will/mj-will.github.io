@@ -7,7 +7,7 @@ tags:
   - bash
 ---
 
-Tensorboard is an incredibly useful tool that allows you to monitor models deployed in Tensorflow or PyTorch as they train and provides are clear interface. If you're using it on a remote machine you'll need to setup port fowarding to your local machine. This is pretty easy to do using SSH tunneling. This can quickly become tedious if you have to regulalry connect and disconnect the tunnel.
+Tensorboard is an incredibly useful tool that allows you to monitor models deployed in Tensorflow or PyTorch as they train and provides are clear interface. If you're using it on a remote machine you'll need to setup port forwarding to your local machine. This is pretty easy to do using SSH tunnelling. This can quickly become tedious if you have to regularly connect and disconnect the tunnel.
 
 In this post I'll explain how I streamlined the whole process with a simple bash script. I'll be assuming some familiarity with SSH and bash.
 
@@ -39,7 +39,7 @@ We need to open SSH tunnel the host in question and forward a particular port to
 $ ssh -N -f -L localhost:6006:localhost:6008 remote_user@remote_host
 ```
 
-This would foward port 6008 from the remote_host to port 6006 on your local machine. The `-L` option is the port fowarding configuration, `-N` indicates there will be no remote commands and `-f` sends the process to the background. This will work fine, but in order to end the process you'll need to kill it with its PID.
+This would forward port 6008 from the remote_host to port 6006 on your local machine. The `-L` option is the port forwarding configuration, `-N` indicates there will be no remote commands and `-f` sends the process to the background. This will work fine, but in order to end the process you'll need to kill it with its PID.
 
 ### More control with Multiplexing
 
@@ -87,7 +87,7 @@ We'll use this to simply the input to our final script.
 
 ## The script
 
-Let's start writing out script. I'll call it `tensorboard-remote.sh` in this example and we'll have two command line arguments, the host and the task. The three tasks we want are: start, check and ecit. So let's layout the outline of the script with a set of if statements:
+Let's start writing out script. I'll call it `tensorboard-remote.sh` in this example and we'll have two command line arguments, the host and the task. The three tasks we want are: start, check and exit. So let's layout the outline of the script with a set of if statements:
 
 ```bash
 #!/usr/bin/env bash
@@ -106,7 +106,7 @@ else
 fi
 ```
 
-I've hard coded the port since I'll only be using this script for one machine with Tensorboard always running on the same port but this could easily be added as anther arugment. 
+I've hard coded the port since I'll only be using this script for one machine with Tensorboard always running on the same port but this could easily be added as anther argument. 
 
 Now we just need to fill in each of the statements with ssh commands to start the tunnel, check it and exit it:
 
@@ -130,7 +130,7 @@ else
 fi
 
 ```
-Here we've used portforwarding when start the ControlMaster to forward the port on the remote machine to port 6006 on our local machine. Notice we've also added `tb-` to the names of sockets, this differentiates them from any you may have for the same host that you don't want to be used to Tensorboard. This script would work as is, but you run this risk of starting multiple connections and then not being able to correctly exit the tunnels, so let's add a statement to check if there's
+Here we've used port-forwarding when start the ControlMaster to forward the port on the remote machine to port 6006 on our local machine. Notice we've also added `tb-` to the names of sockets, this differentiates them from any you may have for the same host that you don't want to be used to Tensorboard. This script would work as is, but you run this risk of starting multiple connections and then not being able to correctly exit the tunnels, so let's add a statement to check if there's
 an existing connection already:
 
 ```bash
@@ -182,9 +182,9 @@ And exit:
 $ ./tensorboard-remote hostA exit
 ```
 
-## Futher improvments
+## Further improvements
 
-I would recommend moving this script to a directory which is in you `$PATH` or adding a directory to your `$PATH` (I normally use `~/.local/bin/`). This allows you to use the scirpt from any directory which is often handly. You could also easily add improvments like openning a tab in your browser that loads a connections to `http://localhost:6006/` or allowing the port to be an option.
+I would recommend moving this script to a directory which is in you `$PATH` or adding a directory to your `$PATH` (I normally use `~/.local/bin/`). This allows you to use the script from any directory which is often handy. You could also easily add improvements like opening a tab in your browser that loads a connections to `http://localhost:6006/` or allowing the port to be an option.
 
 ## Conclusion
 
