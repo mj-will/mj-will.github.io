@@ -5,6 +5,8 @@ main:
     url: /talksandposters/
   - title: "Publications"
     url: /publications/
+  - title: "nessai"
+    url: https://nessai.readthedocs.io/
 
 
 # documentation links
