@@ -1,6 +1,6 @@
 ---
-title: "Talks"
-permalink: /talks/
+title: "Talks & Posters"
+permalink: /talksandposters/
 toc: true
 ---
 
@@ -34,5 +34,14 @@ Colloquium, [Department of Physics, CSU Fullerton](https://physics.fullerton.edu
 
 ## Contributed talks
 
+29 July 2021 - **nessai: Improve nested sampling with normalising flows for graviational-wave inference**
 
-Coming soon
+[GW Mull 2021](https://www.gla.ac.uk/schools/physics/gwmull2021/), Institute of Gravitational Research, University of Glasgow
+
+---
+
+## Posters
+
+NAM 2021 - **nessai: Improved nested sampling with normalising flows for gravitational-wave inference**
+
+[Link to overview and poster](https://ras.ac.uk/nam-2021/michael-williams)
