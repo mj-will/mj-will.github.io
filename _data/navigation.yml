@@ -3,6 +3,8 @@
 main:
   - title: "Talks & Posters"
     url: /talksandposters/
+  - title: "Teaching"
+    url: /teaching/
   - title: "Publications"
     url: /publications/
   - title: "nessai"
