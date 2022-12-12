@@ -6,16 +6,9 @@ toc: true
 
 ## Invited talks
 
-24 March 2021 - **Incorporating machine learning into existing techniques for gravitational-wave inference: nested sampling with normalising flows**
+14 July 2021 - **Introduction to normalising flows: overview and application to gravitational-wave inference**
 
-[Continuous Wave Group](https://www.aei.mpg.de/continuouswaves), Max Planck Institute for Gravitational Physics, Albert Einstein Institute - Hosted by Dr. Maria Alexandra Papa
-
----
-
-
-31 March 2021 - **Incorporating machine learning into existing techniques for gravitational-wave inference: nested sampling with normalising flows**
-
-[TianQin Research Center for Gravitational Physics](http://tianqin.sysu.edu.cn/en), Sun Yat-sen University -  Hosted by Dr. Yi-Ming Hu
+[Machine Learning is Science](https://ml-in-science.github.io/webpage/), College of Science & Engineering, University of Glasgow
 
 ---
 
@@ -27,21 +20,60 @@ Colloquium, [Department of Physics, CSU Fullerton](https://physics.fullerton.edu
 
 ---
 
-14 July 2021 - **Introduction to normalising flows: overview and application to gravitational-wave inference**
+31 March 2021 - **Incorporating machine learning into existing techniques for gravitational-wave inference: nested sampling with normalising flows**
 
-[Machine Learning is Science](https://ml-in-science.github.io/webpage/), College of Science & Engineering, University of Glasgow
+[TianQin Research Center for Gravitational Physics](http://tianqin.sysu.edu.cn/en), Sun Yat-sen University -  Hosted by Dr. Yi-Ming Hu
 
+---
+
+24 March 2021 - **Incorporating machine learning into existing techniques for gravitational-wave inference: nested sampling with normalising flows**
+
+[Continuous Wave Group](https://www.aei.mpg.de/continuouswaves), Max Planck Institute for Gravitational Physics, Albert Einstein Institute - Hosted by Dr. Maria Alexandra Papa
 
 ## Contributed talks
+
+24 November 2022 - **Importance nested sampling with nessaifor gravitational-wave inference**
+
+[LISA data analysis: from classical methods to machine learning](https://indico.in2p3.fr/event/27706/), L2IT Toulouse
+
+---
+
+12 July 2022 - **Importance nested sampling with nessai for gravitational-wave inference**
+
+[Glasgow G2Net Meeting](https://einstein.astro.gla.ac.uk/g2net/programme/), University of Glasgow
+
+---
+
+11 July 2022 - **Importance nested sampling with nessai for gravitational-wave inference**
+
+[NAM22](https://nam2022.org/science/parallel-sessions/details/2/174), University of Warwick
+
+---
+
+04 April 2022 - **Importance nested sampling with nessai**
+
+[BritGrav22](https://www.gla.ac.uk/events/conferences/britgrav22/), University of Glasgow
+
+---
 
 29 July 2021 - **nessai: Improve nested sampling with normalising flows for graviational-wave inference**
 
 [GW Mull 2021](https://www.gla.ac.uk/schools/physics/gwmull2021/), Institute of Gravitational Research, University of Glasgow
 
----
-
 ## Posters
 
-NAM 2021 - **nessai: Improved nested sampling with normalising flows for gravitational-wave inference**
+SUPA Cormack Meeting 2021 - **nessai: Improved nested sampling with normalising flows**
+
+---
+
+AMALDI14 - **nessai: Improved nested sampling with normalising flows**
+
+---
+
+NAM 2021 - **nessai: Improved nested sampling with normalising flows**
 
 [Link to overview and poster](https://ras.ac.uk/nam-2021/michael-williams)
+
+---
+
+PCCP Workshop Series : Bayesian Deep Learning for Cosmology and Gravitational waves - **Convolutional Neural Networks for Gravitational Wave Detection**
