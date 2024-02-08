@@ -95,13 +95,13 @@ analytics:
 author:
   name             : "Michael J. Williams"
   avatar           : "assets/images/bio-photo.jpg"
-  bio              : "I am a PhD student at the University of Glasgow working on applications of machine learning to graivational-wave data analysis"
-  location         : "Glasgow, UK"
+  bio              : "I am a Research Fellow at the Institute of Cosmology & Gravitation, University of Porstmouth working on the intersection of graivational-wave data analysis, Bayesian inference and machine learning."
+  location         : "Portsmouth, UK"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: m.williams.4@research.gla.ac.uk
+      url: michael.williams3@port.ac.uk
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://mj-will.github.io/"
