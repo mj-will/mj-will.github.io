@@ -6,10 +6,18 @@ toc: false
 
 ## Machine learning for Gravitational Wave Data Analysis
 
+### Importance nested sampling with normalizing flows
+
+M. J. Williams, J. Veitch, C, Messenger
+
+[arXiv](https://arxiv.org/abs/2302.08526) - [Journal](https://doi.org/10.1088/2632-2153/acd5aa)
+
+
 ### Nested sampling with normalising flows for gravitational-wave inference
 
-M. J. Williams, J. Veitch, C, Messenger\
-[arXiv](https://arxiv.org/abs/2102.11056) [journal](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.103.103006)
+M. J. Williams, J. Veitch, C, Messenger
+
+[arXiv](https://arxiv.org/abs/2102.11056)- [Journal](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.103.103006)
 
 
 <details>
