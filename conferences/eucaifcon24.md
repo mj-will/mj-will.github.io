@@ -20,7 +20,7 @@ Below you will find useful links related to the poster.
 
 Click the button below to open an example in binder (in your browser)
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mj-will/nessai-binder-env/master?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fmj-will%252Fnessai-binder-example%26urlpath%3Dtree%252Fnessai-binder-example%252Finessai_example.py%26branch%3Dmaster)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mj-will/nessai-binder-env/main?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252Fmj-will%252Fnessai-binder-example%26urlpath%3Dtree%252Fnessai-binder-example%252Finessai_example.ipynb%26branch%3Dmain)
 
 ## Conference
 
