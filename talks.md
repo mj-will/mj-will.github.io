@@ -6,6 +6,12 @@ toc: true
 
 ## Invited talks
 
+05 July 2023 - **Importance nested sampling with normalizing flows**
+
+[42nd International Workshop on Bayesian Inference and Maximum Entropy Methods in Science and Engineering](https://www.ipp.mpg.de/maxent2023), Max-Planck-Institut für Plasmaphysik
+
+---
+
 14 July 2021 - **Introduction to normalising flows: overview and application to gravitational-wave inference**
 
 [Machine Learning is Science](https://ml-in-science.github.io/webpage/), College of Science & Engineering, University of Glasgow
@@ -26,13 +32,14 @@ Colloquium, [Department of Physics, CSU Fullerton](https://physics.fullerton.edu
 
 ---
 
-24 March 2021 - **Incorporating machine learning into existing techniques for gravitational-wave inference: nested sampling with normalising flows**
+24 March 2021 - **Incorporating machine learning into existing techniques for gravitational-wave inference: nested sampling with normaliing flows**
 
 [Continuous Wave Group](https://www.aei.mpg.de/continuouswaves), Max Planck Institute for Gravitational Physics, Albert Einstein Institute - Hosted by Dr. Maria Alexandra Papa
 
+
 ## Contributed talks
 
-24 November 2022 - **Importance nested sampling with nessaifor gravitational-wave inference**
+24 November 2022 - **Importance nested sampling with nessai for gravitational-wave inference**
 
 [LISA data analysis: from classical methods to machine learning](https://indico.in2p3.fr/event/27706/), L2IT Toulouse
 
@@ -60,7 +67,14 @@ Colloquium, [Department of Physics, CSU Fullerton](https://physics.fullerton.edu
 
 [GW Mull 2021](https://www.gla.ac.uk/schools/physics/gwmull2021/), Institute of Gravitational Research, University of Glasgow
 
+
 ## Posters
+
+EuCAIFCon24 - **Importance nested sampling with normalizing flows for graviational-wave inference**
+
+[Details](conferences/eucaifcon24.md)
+
+---
 
 SUPA Cormack Meeting 2021 - **nessai: Improved nested sampling with normalising flows**
 
