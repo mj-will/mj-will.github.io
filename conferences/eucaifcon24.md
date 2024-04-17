@@ -1,12 +1,12 @@
 ---
-title: "Importance nested sampling with normalizing flows @ EuCAIFCon24"
+title: "Importance nested sampling with normalizing flows for gravitational-wave inference @ EuCAIFCon24"
 permalink: /conferences/eucaifcon24/
 toc: false
 ---
 
 **Authors:** Michael J. Williams, John Veitch, Chris Messenger
 
-Below you will useful links related to the poster.
+Below you will find useful links related to the poster.
 
 ## Paper
 
