@@ -1,28 +1,27 @@
+# The following is the order of the links in the header of the website.
+#
+# Changing the order here will adjust the order and you can also add additional
+# links. Removing a link prevents it from showing in the header, but does not
+# prevent it from being included in the site.
 
-# main links
 main:
-  - title: "Talks & Posters"
-    url: /talksandposters/
-  - title: "Teaching"
-    url: /teaching/
   - title: "Publications"
     url: /publications/
-  - title: "nessai"
-    url: https://nessai.readthedocs.io/
 
+  - title: "Talks"
+    url: /talks/    
 
-# documentation links
-guides:
-  - title: Overview
-    children:
-      - title: "Getting Started"
-        url: /guides/plotting/getting-started
-      - title: "Matplotlib"
-        url: /guides/plotting/intro-to-matplotlib
-  - title: Corner Plots
-    children:
-      - title: "Introduction to Corner"
-        url: /guides/plotting/intro-to-corner
-      - title: "Customising Corner Plots"
-        url: /guides/plotting/customising-corner
+  - title: "Teaching"
+    url: /teaching/    
     
+  # - title: "Portfolio"
+  #   url: /portfolio/
+        
+  - title: "Blog Posts"
+    url: /year-archive/
+    
+  # - title: "CV"
+  #   url: /cv/
+    
+  # - title: "Guide"
+  #   url: /markdown/
