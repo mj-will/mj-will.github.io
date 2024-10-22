@@ -25,7 +25,7 @@ author:
   name             : "Michael J. Williams"
   pronouns         : "he/him"  
   bio              : "Research Fellow in Gravitational-wave Astrophysics"
-  location         : "Earth"
+  location         : "UK"
   employer         : "University of Portsmouth"
   uri              : # URL
   email            : "michael.williams3@port.ac.uk" 
@@ -38,6 +38,7 @@ author:
   semantic         : # URL
   pubmed           : # URL
   researchgate     : # URL
+  inspirehep       : "https://inspirehep.net/authors/2156429" 
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
