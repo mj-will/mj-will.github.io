@@ -11,6 +11,25 @@ author_profile: true
 
 {% endif %}
 
+<h2>Talks</h2>
+<h3>Invited Talks & Colloquia</h3>
 {% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
+  {% if post.type == "Invited talk" or post.type == "Colloquium" %}
+    {% include archive-single-talk.html %}
+  {% endif %}
 {% endfor %}
+
+<h3>Contributed Talks</h3>
+{% for post in site.talks reversed %}
+  {% if post.type == "Contributed talk" %}
+    {% include archive-single-talk.html %}
+  {% endif %}
+{% endfor %}
+
+<h2>Posters</h2>
+{% for post in site.talks reversed %}
+  {% if post.type == "Poster" %}
+    {% include archive-single-talk.html %}
+  {% endif %}
+{% endfor %}
+
