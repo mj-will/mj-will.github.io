@@ -1,0 +1,11 @@
+---
+title: "Matching matched filtering with deep networks for gravitational-wave astronomy"
+collection: publications
+category: manuscripts
+permalink: /publication/1712.06041/
+date: 2018-01-01
+excerpt: ''
+venue: 'Phys. Rev. Lett.'
+arxivurl: 'https://arxiv.org/abs/1712.06041'
+---
+<p>We report on the construction of a deep convolutional neural network that can reproduce the sensitivity of a matched-filtering search for binary black hole gravitational-wave signals. The standard method for the detection of well modeled transient gravitational-wave signals is matched filtering. However, the computational cost of such searches in low latency will grow dramatically as the low frequency sensitivity of gravitational-wave detectors improves. Convolutional neural networks provide a highly computationally efficient method for signal identification in which the majority of calculations are performed prior to data taking during a training process. We use only whitened time series of measured gravitational-wave strain as an input, and we train and test on simulated binary black hole signals in synthetic Gaussian noise representative of Advanced LIGO sensitivity. We show that our network can classify signal from noise with a performance that emulates that of match filtering applied to the same datasets when considering the sensitivity defined by Reciever-Operator characteristics.</p>

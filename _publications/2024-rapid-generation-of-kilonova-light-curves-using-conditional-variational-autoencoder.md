@@ -1,0 +1,11 @@
+---
+title: "Rapid Generation of Kilonova Light Curves Using Conditional Variational Autoencoder"
+collection: publications
+category: manuscripts
+permalink: /publication/2310.17450/
+date: 2024-01-01
+excerpt: ''
+venue: 'Astrophys. J.'
+arxivurl: 'https://arxiv.org/abs/2310.17450'
+---
+<p>The discovery of the optical counterpart, along with the gravitational waves from GW170817, of the first binary neutron star merger, opened up a new era for multi-messenger astrophysics. Combining the GW data with the optical counterpart, also known as AT2017gfo, classified as a kilonova, has revealed the nature of compact binary merging systems by extracting enriched information about the total binary mass, the mass ratio, the system geometry, and the equation of state. Even though the detection of kilonova brought about a revolution in the domain of multi-messenger astronomy, since there has been only one kilonova from a gravitational wave detected binary neutron star merger event so far, this limits the exact understanding of the origin and propagation of the kilonova. Here, we use a conditional variational autoencoder trained on light curve data from two kilonova models having different temporal lengths, and consequently, generate kilonova light curves rapidly based on physical parameters of our choice with good accuracy. Once trained, the time scale for light curve generation is of the order of a few milliseconds, thus speeding up generating light curves by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1000</mn></mrow></math> times compared to the simulation. The mean squared error between the generated and original light curves is typically <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.015</mn></mrow></math> with a maximum of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0.08</mn></mrow></math> for each set of considered physical parameter; while having a maximum of <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mo>&#x02248;</mo><mn>0.6</mn></mrow></math> error across the whole parameter space. Hence, implementing this technique provides fast and reliably accurate results.</p>

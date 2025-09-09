@@ -1,0 +1,11 @@
+---
+title: "Importance nested sampling with normalising flows"
+collection: publications
+category: manuscripts
+permalink: /publication/2302.08526/
+date: 2023-01-01
+excerpt: ''
+venue: 'Mach. Learn. Sci. Tech.'
+arxivurl: 'https://arxiv.org/abs/2302.08526'
+---
+<p>We present an improved version of the nested sampling algorithm nessai in which the core algorithm is modified to use importance weights. In the modified algorithm, samples are drawn from a mixture of normalising flows and the requirement for samples to be independently and identically distributed (i.i.d.) according to the prior is relaxed. Furthermore, it allows for samples to be added in any order, independently of a likelihood constraint, and for the evidence to be updated with batches of samples. We call the modified algorithm i-nessai. We first validate i-nessai using analytic likelihoods with known Bayesian evidences and show that the evidence estimates are unbiased in up to 32 dimensions. We compare i-nessai to standard nessai for the analytic likelihoods and the Rosenbrock likelihood, the results show that i-nessai is consistent with nessai whilst producing more precise evidence estimates. We then test i-nessai on 64 simulated gravitational-wave signals from binary black hole coalescence and show that it produces unbiased estimates of the parameters. We compare our results to those obtained using standard nessai and dynesty and find that i-nessai requires 2.68 and 13.3 times fewer likelihood evaluations to converge, respectively. We also test i-nessai of an 80-second simulated binary neutron star signal using a Reduced-Order-Quadrature (ROQ) basis and find that, on average, it converges in 24 minutes, whilst only requiring <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1.01</mn><mi>&#x000D7;</mi><msup><mn>10</mn><mn>6</mn></msup></mrow></math> likelihood evaluations compared to <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1.42</mn><mi>&#x000D7;</mi><msup><mn>10</mn><mn>6</mn></msup></mrow></math> for nessai and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4.30</mn><mi>&#x000D7;</mi><msup><mn>10</mn><mn>7</mn></msup></mrow></math> for dynesty. These results demonstrate the i-nessai is consistent with nessai and dynesty whilst also being more efficient.</p>
