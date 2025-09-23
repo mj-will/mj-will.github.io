@@ -42,6 +42,25 @@ layout: default
           {% else %}
             <p>Pre-print, {{ page.date | default: "1900-01-01" | date: "%Y" }}</p>
           {% endif %}
+        {% elsif page.collection == 'software' %}
+          {% if page.github_url or page.gitlab_url or page.pypi_url or page.conda_url or page.docs_url %}
+            <p>
+            {% if page.github_url %}
+              <a href="{{ page.github_url }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+            {% elsif page.gitlab_url %}
+              <a href="{{ page.gitlab_url }}"><i class="fab fa-gitlab" aria-hidden="true"></i> GitLab</a>
+            {% endif %}
+            {% if page.pypi_url %}
+              {% if page.github_url or page.gitlab_url %}| {% endif %}<a href="{{ page.pypi_url }}"><i class="fab fa-python" aria-hidden="true"></i> PyPI</a>
+            {% endif %}
+            {% if page.conda_url %}
+              {% if page.github_url or page.gitlab_url or page.pypi_url %}| {% endif %}<a href="{{ page.conda_url }}"><i class="fas fa-cube" aria-hidden="true"></i> conda-forge</a>
+            {% endif %}
+            {% if page.docs_url %}
+              {% if page.github_url or page.gitlab_url or page.pypi_url or page.conda_url %}| {% endif %}<a href="{{ page.docs_url }}"><i class="fas fa-book" aria-hidden="true"></i> Documentation</a>
+            {% endif %}
+            </p>
+          {% endif %}
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}    

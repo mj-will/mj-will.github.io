@@ -1,0 +1,36 @@
+---
+layout: archive
+title: "Software"
+permalink: /software/
+author_profile: true
+---
+
+I'm an advocate for open science and open-source software. I develop and contribute
+to various open-source packages. Most of the development is on GitHub and can be
+found from my <a href="https://github.com/mj-will">GitHub profile</a>.
+
+{% include base_path %}
+
+<h2>Core Packages</h2>
+
+{% for post in site.software %}
+  {% if post.category == "core" %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+<h2>Extensions & Plugins</h2>
+
+{% for post in site.software %}
+  {% if post.category == "plugin" %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+<h2>Packages I Contribute To</h2>
+
+{% for post in site.software %}
+  {% if post.category == "contributor" %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
