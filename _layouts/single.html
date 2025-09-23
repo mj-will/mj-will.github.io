@@ -42,6 +42,16 @@ layout: default
           {% else %}
             <p>Pre-print, {{ page.date | default: "1900-01-01" | date: "%Y" }}</p>
           {% endif %}
+          {% if page.arxivurl or page.paperurl %}
+            <p>
+            {% if page.arxivurl %}
+              <a href="{{ page.arxivurl }}"><i class="fas fa-file-alt" aria-hidden="true"></i> arXiv</a>
+            {% endif %}
+            {% if page.paperurl %}
+              {% if page.arxivurl %}| {% endif %}<a href="{{ page.paperurl }}"><i class="fas fa-file-pdf" aria-hidden="true"></i> Paper</a>
+            {% endif %}
+            </p>
+          {% endif %}
         {% elsif page.collection == 'software' %}
           {% if page.github_url or page.gitlab_url or page.pypi_url or page.conda_url or page.docs_url %}
             <p>
@@ -80,8 +90,6 @@ layout: default
           <p style="font-size: smaller">Recommended citation: {{ page.citation }}</p>
         {% elsif page.slidesurl %}
           <p style="font-size: smaller"><a href="{{ page.slidesurl }}">Download Slides</a></p>
-        {% elsif page.arxivurl %}
-          <p style="font-size: smaller;"><a href="{{ post.arxivurl }}">arXiv</a></p>
         {% endif %}
 
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}

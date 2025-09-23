@@ -41,18 +41,20 @@
         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
-          {% if post.arxivurl and post.arxivurl != "" %}
-            {% if post.venue and post.venue != "" %}
-              <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} - <a href="{{ post.arxivurl }}">arXiv</a></p>
-            {% else %}
-              <p>Pre-print, {{ post.date | default: "1900-01-01" | date: "%Y" }} - <a href="{{ post.arxivurl }}">arXiv</a></p>
-            {% endif %}
+          {% if post.venue and post.venue != "" %}
+            <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
           {% else %}
-            {% if post.venue and post.venue != "" %}
-              <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
-            {% else %}
-              <p>Pre-print, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
+            <p>Pre-print, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
+          {% endif %}
+          {% if post.arxivurl or post.paperurl %}
+            <p>
+            {% if post.arxivurl %}
+              <a href="{{ post.arxivurl }}"><i class="fas fa-file-alt" aria-hidden="true"></i> arXiv</a>
             {% endif %}
+            {% if post.paperurl %}
+              {% if post.arxivurl %}| {% endif %}<a href="{{ post.paperurl }}"><i class="fas fa-file-pdf" aria-hidden="true"></i> Paper</a>
+            {% endif %}
+            </p>
           {% endif %}
         {% elsif post.collection == 'software' %}
           {% if post.github_url or post.gitlab_url or post.pypi_url or post.conda_url or post.docs_url %}
