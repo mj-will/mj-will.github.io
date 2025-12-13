@@ -399,3 +399,27 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
+// Recent highlights block on the home page
+.highlights-list {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+
+  li {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.35rem;
+    align-items: flex-start;
+  }
+
+  .highlight-date {
+    min-width: 4.5rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .highlight-text {
+    flex: 1;
+  }
+}

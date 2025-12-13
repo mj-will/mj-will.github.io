@@ -21,5 +21,25 @@ I then did my PhD with John Veitch and Chris Messenger at the [Institute for Gra
 and focused on developing techniques to accelerate Bayesian inference algorithms for
 characterizing gravitational-wave signals.
 
+## Recent highlights
+<ul class="highlights-list">
+  {% for item in site.data.highlights limit:5 %}
+    <li>
+      <span class="highlight-date">{{ item.date }}</span>
+      <span class="highlight-text">
+        {% if item.url %}
+          {% if item.url contains '://' %}
+            <a href="{{ item.url }}">{{ item.title }}</a>
+          {% else %}
+            <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+          {% endif %}
+        {% else %}
+          {{ item.title }}
+        {% endif %}
+      </span>
+    </li>
+  {% endfor %}
+</ul>
+
 [igr]: https://www.gla.ac.uk/schools/physics/research/groups/igr/members/
 [icg]: https://www.port.ac.uk/research/institute-of-cosmology-and-gravitation
