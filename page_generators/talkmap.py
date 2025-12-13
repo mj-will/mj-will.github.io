@@ -69,14 +69,38 @@ def write_map_html(output_dir: Path) -> None:
   <script src="talks.js"></script>
   <style>
     html, body { height: 100%; margin: 0; }
-    #map { height: 700px; }
+    .map-wrap { position: relative; height: 700px; }
+    #map { height: 100%; }
     .marker { width: 14px; height: 14px; border: 2px solid #fff; box-shadow: 0 0 2px rgba(0,0,0,0.4); }
     .marker-in-person { background: #1f7a8c; border-radius: 50%; }
     .marker-online { background: #c0392b; border-radius: 2px; }
+    .legend {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 8px 10px;
+      border-radius: 6px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+      font-family: sans-serif;
+      font-size: 12px;
+      line-height: 1.4;
+    }
+    .legend-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
   </style>
 </head>
 <body>
-  <div id="map"></div>
+  <div class="map-wrap">
+    <div id="map"></div>
+    <div class="legend">
+      <div class="legend-row"><span class="marker marker-in-person"></span> In-person</div>
+      <div class="legend-row"><span class="marker marker-online"></span> Online</div>
+    </div>
+  </div>
   <script>
     var tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 18,

@@ -2,8 +2,8 @@ var talkPoints = [
   {
     "title": "Convolutional Neural Networks for Gravitational Wave Detection",
     "location": "Paris, France",
-    "lat": 48.8588897,
-    "lng": 2.320041,
+    "lat": 48.8534951,
+    "lng": 2.3483915,
     "mode": "in-person",
     "permalink": "/posters/2020-03-05-pccp"
   },
@@ -88,6 +88,14 @@ var talkPoints = [
     "permalink": "/talks/2023-07-05-maxent"
   },
   {
+    "title": "Impact of galaxy catalogues on parameter estimation",
+    "location": "Baton Rouge, USA",
+    "lat": 30.4494155,
+    "lng": -91.1869659,
+    "mode": "in-person",
+    "permalink": "/posters/2024-03-13-lvk"
+  },
+  {
     "title": "Importance nested sampling with normalising flows",
     "location": "Arran, Scotland",
     "lat": 55.577451,
@@ -114,16 +122,16 @@ var talkPoints = [
   {
     "title": "Premerger observation and characterization of supermassive black hole binaries",
     "location": "University College Dublin, Dublin, Ireland",
-    "lat": 53.3081294,
-    "lng": -6.2270405,
+    "lat": 53.3070788,
+    "lng": -6.2229585,
     "mode": "in-person",
     "permalink": "/talks/2024-07-08-lisasymposium15"
   },
   {
     "title": "Machine learning for gravitational-wave data inference",
     "location": "Leiden, Netherlands",
-    "lat": 52.1594747,
-    "lng": 4.4908843,
+    "lat": 52.1518157,
+    "lng": 4.4811089,
     "mode": "in-person",
     "permalink": "/talks/2024-10-18-o4-challenges"
   },
