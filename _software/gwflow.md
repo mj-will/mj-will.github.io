@@ -8,6 +8,4 @@ github_url: 'https://github.com/mj-will/gwflow'
 pypi_url: 'https://pypi.org/project/gwflow/'
 ---
 
-<a href="https://github.com/mj-will/gwflow"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
-
 `gwflow` is a normalizing flow package that builds on `zuko` and provides gravitational-wave specific features.

@@ -9,3 +9,5 @@ pypi_url: 'https://pypi.org/project/minipcn/'
 ---
 
 `minipcn` is a lightweight MCMC sampler that implements the preconditioned Crank-Nicolson kernel (pCN) and the related t-pCN kernel.
+
+`minipcn` also supports various array backends via the `array-api` standard.
