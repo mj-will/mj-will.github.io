@@ -5,5 +5,6 @@ type: "Invited talk"
 permalink: /talks/2021-07-14-aei
 venue: "Machine Learning in Science, University of Glasgow"
 date: 2021-07-14
-location: "UK"
+location: "Glasgow, UK"
+mode: in-person
 ---

@@ -5,5 +5,6 @@ type: "Invited talk"
 permalink: /talks/2021-03-31-aei
 venue: "TianQin Research Center for Gravitational Physics, Sun Yat-sen University (remote)"
 date: 2021-03-31
-location: "China"
+location: "Zhuhai, China"
+mode: online
 ---
