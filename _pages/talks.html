@@ -7,11 +7,8 @@ toc: true
 toc_sticky: true
 ---
 
-{% if site.talkmap_link == true %}
-
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
-{% endif %}
+<h2>Talk map</h2>
+<iframe src="{{ '/talkmap/map.html' | relative_url }}" height="700" width="100%" style="border:none;"></iframe>
 
 <h2>Talks</h2>
 <h3>Invited Talks & Colloquia</h3>
@@ -34,4 +31,3 @@ toc_sticky: true
     {% include archive-single-talk.html %}
   {% endif %}
 {% endfor %}
-
