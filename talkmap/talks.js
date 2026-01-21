@@ -2,8 +2,8 @@ var talkPoints = [
   {
     "title": "Convolutional Neural Networks for Gravitational Wave Detection",
     "location": "Paris, France",
-    "lat": 48.8534951,
-    "lng": 2.3483915,
+    "lat": 48.8588897,
+    "lng": 2.320041,
     "mode": "in-person",
     "permalink": "/posters/2020-03-05-pccp"
   },
@@ -122,16 +122,16 @@ var talkPoints = [
   {
     "title": "Premerger observation and characterization of supermassive black hole binaries",
     "location": "University College Dublin, Dublin, Ireland",
-    "lat": 53.3070788,
-    "lng": -6.2229585,
+    "lat": 53.3081294,
+    "lng": -6.2270405,
     "mode": "in-person",
     "permalink": "/talks/2024-07-08-lisasymposium15"
   },
   {
     "title": "Machine learning for gravitational-wave data inference",
     "location": "Leiden, Netherlands",
-    "lat": 52.1518157,
-    "lng": 4.4811089,
+    "lat": 52.1594747,
+    "lng": 4.4908843,
     "mode": "in-person",
     "permalink": "/talks/2024-10-18-o4-challenges"
   },
@@ -166,5 +166,21 @@ var talkPoints = [
     "lng": 5.1215634,
     "mode": "in-person",
     "permalink": "/talks/2025-10-23-grasp"
+  },
+  {
+    "title": "GW searches and PE: UK's role, future challenges and active research",
+    "location": "Nottingham, UK",
+    "lat": 52.9534193,
+    "lng": -1.1496461,
+    "mode": "in-person",
+    "permalink": "/talks/2026-01-15-gwuk"
+  },
+  {
+    "title": "Accelerating gravitational-wave inference with machine learning",
+    "location": "Egham, UK",
+    "lat": 51.4312585,
+    "lng": -0.5473085,
+    "mode": "in-person",
+    "permalink": "/talks/2026-01-21-rhul"
   }
 ];
