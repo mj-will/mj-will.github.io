@@ -1,5 +1,11 @@
 # Update this list to control the "Recent highlights" section on the home page.
 # Keep the most recent items at the top.
+- date: 2026-02
+  title: Seminar at AEI Potsdam
+  url: /talks/2026-02-04-aei
+- date: 2026-01
+  title: Invited talk at GWFreeRide
+  url: /talks/2026-01-28-gwfreeride
 - date: 2026-01
   title: PPA Seminar at Royal Holloway on accelerating gravitational-wave PE with machine learning
   url: /talks/2026-01-21-rhul
@@ -12,12 +18,3 @@
 - date: 2025-11
   title: Accelerated Sequential Posterior Inference via Reuse for Gravitational-Wave Analyses appeared on arXiv
   url: /publication/2511.04218/
-- date: 2025-10
-  title: GRASP Colloquium on accelerating gravitational-wave PE with machine learning
-  url: /talks/2025-10-23-grasp
-- date: 2025-09
-  title: First alpha release of aspire (previously poppy)
-  url: /software/aspire/
-- date: 2025-07
-  title: Speaking at MIAPbP on the use of machine learning for PE in LISA
-  url: /talks/2025-07-15-miapbp
