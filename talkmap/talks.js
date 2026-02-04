@@ -122,8 +122,8 @@ var talkPoints = [
   {
     "title": "Premerger observation and characterization of supermassive black hole binaries",
     "location": "University College Dublin, Dublin, Ireland",
-    "lat": 53.3081294,
-    "lng": -6.2270405,
+    "lat": 53.3070788,
+    "lng": -6.2229585,
     "mode": "in-person",
     "permalink": "/talks/2024-07-08-lisasymposium15"
   },
@@ -182,5 +182,21 @@ var talkPoints = [
     "lng": -0.5473085,
     "mode": "in-person",
     "permalink": "/talks/2026-01-21-rhul"
+  },
+  {
+    "title": "ML-enhanced sampling",
+    "location": "Sexten, Italy",
+    "lat": 46.7027433,
+    "lng": 12.350544,
+    "mode": "in-person",
+    "permalink": "/talks/2026-01-27-gwfreeride"
+  },
+  {
+    "title": "Sequential Inference for Gravitational-Wave Astronomy: Methods and Applications with Sequential Monte Carlo",
+    "location": "Golm, Germany",
+    "lat": 52.4068318,
+    "lng": 12.9682671,
+    "mode": "in-person",
+    "permalink": "/talks/2026-02-04-aei"
   }
 ];
