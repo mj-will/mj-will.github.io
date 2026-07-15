@@ -1,5 +1,13 @@
 # Update this list to control the "Recent highlights" section on the home page.
 # Keep the most recent items at the top.
+- date: 2026-07
+  title: Accelerated Sequential Posterior Inference via Reuse for Gravitational-Wave Analyses was published in PRL
+  url: /publication/2511.04218/
+- date: 2026-07
+  title: Seminar at IGR, University of Glasgow
+  url: /talks/2026-07-09-igr
+- date: 2026-03
+  title: LVK Meeting in Pisa
 - date: 2026-02
   title: Seminar at AEI Potsdam
   url: /talks/2026-02-04-aei
@@ -12,9 +20,3 @@
 - date: 2026-01
   title: Speaking at GW:UK Meeting on GW searches and PE in the UK
   url: /talks/2026-01-15-gwuk
-- date: 2025-11
-  title: First alpha release of ORNG
-  url: /software/orng/
-- date: 2025-11
-  title: Accelerated Sequential Posterior Inference via Reuse for Gravitational-Wave Analyses appeared on arXiv
-  url: /publication/2511.04218/
