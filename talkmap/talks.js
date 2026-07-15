@@ -198,5 +198,13 @@ var talkPoints = [
     "lng": 12.9682671,
     "mode": "in-person",
     "permalink": "/talks/2026-02-04-aei"
+  },
+  {
+    "title": "Sequential Inference for Gravitational-Wave Astronomy: Methods and Applications with Sequential Monte Carlo",
+    "location": "Glasgow, UK",
+    "lat": 55.861155,
+    "lng": -4.2501687,
+    "mode": "in-person",
+    "permalink": "/talks/2026-07-09-igr"
   }
 ];

@@ -20,6 +20,8 @@ import sys
 from pathlib import Path
 import yaml
 from geopy import Nominatim
+from geopy.exc import GeocoderServiceError
+from geopy.extra.rate_limiter import RateLimiter
 
 
 def parse_front_matter(md_text: str) -> dict:
@@ -40,6 +42,32 @@ def mode_normalized(meta: dict) -> str:
     """Normalize mode to 'online' or 'in-person'."""
     mode = (meta.get("mode") or "").strip().lower()
     return mode if mode in {"online", "in-person"} else "in-person"
+
+
+def load_geocode_cache(cache_path: Path) -> dict[str, tuple[float, float]]:
+    """Load previously resolved locations, ignoring a missing or invalid cache."""
+    if not cache_path.exists():
+        return {}
+
+    try:
+        cached = json.loads(cache_path.read_text(encoding="utf-8"))
+        return {
+            location: (float(coords[0]), float(coords[1]))
+            for location, coords in cached.items()
+            if isinstance(coords, list) and len(coords) == 2
+        }
+    except (OSError, ValueError, AttributeError, TypeError) as error:
+        print(f"Could not read geocode cache {cache_path}: {error}")
+        return {}
+
+
+def save_geocode_cache(cache: dict[str, tuple[float, float]], cache_path: Path) -> None:
+    """Persist resolved locations atomically so interrupted runs retain progress."""
+    temporary_path = cache_path.with_suffix(f"{cache_path.suffix}.tmp")
+    temporary_path.write_text(
+        json.dumps(cache, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+    )
+    temporary_path.replace(cache_path)
 
 
 def write_data_file(points: list[dict], output_dir: Path) -> None:
@@ -78,6 +106,7 @@ def write_map_html(output_dir: Path) -> None:
       position: absolute;
       bottom: 12px;
       right: 12px;
+      z-index: 1000;
       background: rgba(255, 255, 255, 0.9);
       padding: 8px 10px;
       border-radius: 6px;
@@ -145,8 +174,21 @@ def main(path_to_talks: str | Path) -> int:
         print(f"Talk directory not found: {path_to_talks}")
         return 1
 
-    geocoder = Nominatim(user_agent="talkmap_generator", timeout=10)
-    geocode_cache: dict[str, tuple[float, float]] = {}
+    output_dir = path_to_talks.parent / "talkmap"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    cache_path = output_dir / "geocode_cache.json"
+    geocode_cache = load_geocode_cache(cache_path)
+
+    geocoder = Nominatim(
+        user_agent="talkmap_generator/1.0 (https://mj-will.github.io/)", timeout=10
+    )
+    geocode = RateLimiter(
+        geocoder.geocode,
+        min_delay_seconds=1.1,
+        max_retries=3,
+        error_wait_seconds=5,
+        swallow_exceptions=False,
+    )
     points: list[dict] = []
 
     for file in sorted(path_to_talks.glob("*.md")):
@@ -159,11 +201,17 @@ def main(path_to_talks: str | Path) -> int:
             continue
 
         if location not in geocode_cache:
-            coords = geocoder.geocode(location)
+            try:
+                coords = geocode(location)
+            except GeocoderServiceError as error:
+                print(f"Could not geocode '{location}' in {file.name}: {error}")
+                print("Cached locations were saved; wait a moment and run make again.")
+                return 1
             if coords is None:
                 print(f"Could not geocode '{location}' in {file.name}, skipping...")
                 continue
             geocode_cache[location] = (coords.latitude, coords.longitude)
+            save_geocode_cache(geocode_cache, cache_path)
             print(f"{file.name}: {location} -> {coords.latitude}, {coords.longitude}")
 
         lat, lng = geocode_cache[location]
@@ -182,7 +230,6 @@ def main(path_to_talks: str | Path) -> int:
         print("No geocoded locations found; map not generated.")
         return 1
 
-    output_dir = path_to_talks.parent / "talkmap"
     write_data_file(points, output_dir)
     write_map_html(output_dir)
     return 0

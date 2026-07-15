@@ -1,6 +1,7 @@
 # Ignore the contents of the _site directory and other cache directories
 _site/
 .sass-cache/
+__pycache__/
 
 # Ignore the directory for local files during development
 local/
@@ -10,6 +11,9 @@ Gemfile.lock
 
 # Ingore files created by npm
 node_modules
+
+# Temporary file used while updating the committed geocode cache
+talkmap/geocode_cache.json.tmp
 
 # Ignore vendor file
 vendor/
