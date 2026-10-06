@@ -38,7 +38,7 @@ def make_citation(entry):
 
 def main(bib_file):
     # Load your .bib file
-    output_dir = Path("../_publications")
+    output_dir = Path(__file__).resolve().parent.parent / "_publications"
     output_dir.mkdir(exist_ok=True)
 
     # Read bibtex
@@ -74,7 +74,7 @@ def main(bib_file):
         paper_md = f"""---
 title: "{title}"
 collection: publications
-category: manuscripts
+category: {entry.get("category", "manuscripts")}
 permalink: /publication/{arxiv_id if arxiv_id else f'{year}-{slug}'}/
 date: {year}-{month}-01
 excerpt: ''

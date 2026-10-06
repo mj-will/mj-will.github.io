@@ -1,0 +1,25 @@
+[workspace]
+name = "personal-website"
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+
+[dependencies]
+python = "3.12.*"
+make = "*"
+ruby = "3.2.*"
+c-compiler = "*"
+cxx-compiler = "*"
+
+[activation.env]
+BUNDLE_PATH = ".pixi/bundle"
+
+[pypi-dependencies]
+arxiv = "*"
+bibtexparser = ">=1.4,<2"
+mdtex2html = "*"
+
+[tasks]
+publications = "make publications"
+jekyll-install = "ruby $CONDA_PREFIX/bin/bundle install"
+build = { cmd = "ruby $CONDA_PREFIX/bin/bundle exec jekyll build", depends-on = ["jekyll-install"] }
+serve = { cmd = "ruby $CONDA_PREFIX/bin/bundle exec jekyll serve --host 127.0.0.1", depends-on = ["jekyll-install"] }

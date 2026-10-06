@@ -1,9 +1,9 @@
 ---
-title: "Inference with finite time series: II. The window strikes back"
+title: "Inference with finite time series II: the window strikes back"
 collection: publications
 category: manuscripts
 permalink: /publication/2508.11091/
-date: 2025-01-01
+date: 2025-08-01
 excerpt: ''
 venue: 'Class. Quant. Grav.'
 arxivurl: 'https://arxiv.org/abs/2508.11091'
