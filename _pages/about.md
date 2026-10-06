@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi, I'm Michael, a Research Fellow at the [Institute of Cosmology & Gravitation][icg] at the University of Portsmouth.
+Hi, I'm Michael, a postdoctoral researcher at the [Max Planck Institute for Gravitational Physics (Albert Einstein Institute)][aei] in Potsdam.
 My main research interest is the intersection between gravitational-wave astrophysics, machine learning and Bayesian statistics.
 I'm also a member of the LIGO-Virgo-KAGRA Collaboration, where I hold the role of Parameter Estimation co-chair, and I recently
 joined the LISA Consortium.
@@ -17,9 +17,12 @@ Chris Messenger in the [Institute for Gravitational Research][igr] at the Univer
 The project involved training a convolutional neural network to detect gravitational-wave
 signals from binary black hole mergers.
 
-I then did my PhD with John Veitch and Chris Messenger at the [Institute for Gravitational research][igr]
+I then did my PhD with John Veitch and Chris Messenger at the [Institute for Gravitational Research][igr]
 and focused on developing techniques to accelerate Bayesian inference algorithms for
 characterizing gravitational-wave signals.
+
+Before moving to Potsdam, I was a Research Fellow at the [Institute of Cosmology & Gravitation][icg]
+at the University of Portsmouth where I worked with Ian Harry.
 
 ## Recent highlights
 <ul class="highlights-list">
@@ -43,3 +46,4 @@ characterizing gravitational-wave signals.
 
 [igr]: https://www.gla.ac.uk/schools/physics/research/groups/igr/members/
 [icg]: https://www.port.ac.uk/research/institute-of-cosmology-and-gravitation
+[aei]: https://www.aei.mpg.de/
