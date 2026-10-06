@@ -58,8 +58,8 @@ var talkPoints = [
   {
     "title": "Importance nested sampling with nessai for gravitational-wave inference",
     "location": "Warwick, UK",
-    "lat": 52.2814519,
-    "lng": -1.5815742,
+    "lat": 52.2821379,
+    "lng": -1.5905593,
     "mode": "in-person",
     "permalink": "/talks/2022-07-11-nam2022"
   },
@@ -130,8 +130,8 @@ var talkPoints = [
   {
     "title": "Machine learning for gravitational-wave data inference",
     "location": "Leiden, Netherlands",
-    "lat": 52.1594747,
-    "lng": 4.4908843,
+    "lat": 52.1518157,
+    "lng": 4.4811089,
     "mode": "in-person",
     "permalink": "/talks/2024-10-18-o4-challenges"
   },
@@ -186,8 +186,8 @@ var talkPoints = [
   {
     "title": "ML-enhanced sampling",
     "location": "Sexten, Italy",
-    "lat": 46.7027433,
-    "lng": 12.350544,
+    "lat": 46.6719672,
+    "lng": 12.3870513,
     "mode": "in-person",
     "permalink": "/talks/2026-01-27-gwfreeride"
   },

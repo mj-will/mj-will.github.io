@@ -17,9 +17,12 @@ BUNDLE_PATH = ".pixi/bundle"
 arxiv = "*"
 bibtexparser = ">=1.4,<2"
 mdtex2html = "*"
+pyyaml = "*"
+geopy = "*"
 
 [tasks]
 publications = "make publications"
+talkmap = "make talkmap"
 jekyll-install = "ruby $CONDA_PREFIX/bin/bundle install"
 build = { cmd = "ruby $CONDA_PREFIX/bin/bundle exec jekyll build", depends-on = ["jekyll-install"] }
 serve = { cmd = "ruby $CONDA_PREFIX/bin/bundle exec jekyll serve --host 127.0.0.1", depends-on = ["jekyll-install"] }

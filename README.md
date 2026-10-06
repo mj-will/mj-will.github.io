@@ -21,3 +21,9 @@ Jekyll rebuilds when site files change. Stop the server with Ctrl+C.
 
 Publication entries can set `category` in `page_generators/references.bib`;
 entries without it default to `manuscripts`.
+
+## Rebuilding the talk map
+
+Run `pixi run talkmap` after updating talks in `_talks/`.
+To force a rebuild, run `pixi run make -B talkmap`.
+New locations are geocoded online; previously resolved locations use the cache.
