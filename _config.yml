@@ -22,6 +22,7 @@ repository               : "https://michaeljwilliams.me/"
 author:
   # Biographic information
   avatar           : "profile.jpg"
+  avatar_credit    : "© sevens[+]maltry"
   name             : "Michael J. Williams"
   pronouns         : "he/him"  
   bio              : "Postdoctoral Researcher in Gravitational-wave Astrophysics"
